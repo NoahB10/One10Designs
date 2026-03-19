@@ -1,2 +1,330 @@
 
-/** ADD YOUR AWESOME CODES HERE **/
+/** ONE10 DESIGNS V3 **/
+
+/* Transparent navbar over the banner */
+nav.navbar.bootsnav {
+    background: transparent !important;
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+nav.navbar.bootsnav ul.nav > li > a {
+    color: #ffffff !important;
+    padding: 15px 15px !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li.active > a {
+    color: #b0b435 !important;
+}
+
+/* Hide navbar when scrolled past hero on homepage */
+.main-header.fixed-menu {
+    display: none !important;
+}
+
+/* Text brand instead of logo image */
+.navbar-brand {
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    padding: 10px 0 !important;
+}
+
+.navbar-brand:hover {
+    color: #b0b435 !important;
+}
+
+.navbar-brand img {
+    display: none !important;
+}
+
+/* Mobile hamburger */
+.navbar-toggler {
+    border-color: #b0b435 !important;
+}
+
+.navbar-toggler i {
+    color: #b0b435;
+}
+
+/* Remove the dark overlay that hides carousel images */
+.instagram-box::before {
+    display: none !important;
+}
+
+.instagram-box {
+    background: #000000 !important;
+    background-image: none !important;
+}
+
+/* Carousel sections */
+.carousel-section {
+    background: #000000;
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel-wrap {
+    position: relative;
+    padding: 0 0 40px;
+    background: #000000;
+}
+
+/* Carousel nav arrows - same as original instagram carousel */
+.carousel-wrap .owl-carousel .owl-nav button.owl-prev,
+.carousel-wrap .owl-carousel .owl-nav button.owl-next {
+    background: #000000;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 50px;
+    line-height: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    top: 0;
+    padding: 0;
+    margin-top: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.carousel-wrap .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+.carousel-wrap .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+.carousel-wrap .owl-carousel .owl-nav button:hover {
+    background: #b0b435;
+}
+
+.carousel-title {
+    text-align: center;
+    padding: 40px 0 20px;
+    background: #000000;
+}
+
+.carousel-title h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.carousel-title p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.carousel-title .section-divider {
+    width: 60px;
+    height: 3px;
+    background: #b0b435;
+    margin: 15px auto 0;
+}
+
+/* Footer updates */
+.footer-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-widget ul li {
+    margin-bottom: 8px;
+}
+
+.footer-widget ul li a {
+    color: #cccccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+    color: #b0b435;
+    padding-left: 5px;
+}
+
+/* Inner pages - solid black navbar, always visible */
+.inner-page nav.navbar.bootsnav {
+    background: #000000 !important;
+    position: relative;
+}
+
+.inner-page .main-header.fixed-menu {
+    display: block !important;
+    background: #000000 !important;
+}
+
+.inner-page .main-header.fixed-menu nav.navbar.bootsnav {
+    background: #000000 !important;
+}
+
+/* Page header for inner pages */
+.page-header-section {
+    background: #000000;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.page-header-section h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.page-header-section p {
+    color: #999;
+    font-size: 18px;
+}
+
+.page-header-section .section-divider {
+    width: 60px;
+    height: 3px;
+    background: #b0b435;
+    margin: 15px auto 0;
+}
+
+/* Custom work gallery */
+.custom-gallery-img {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 300px;
+}
+
+.custom-gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.custom-gallery-img:hover img {
+    transform: scale(1.05);
+}
+
+/* Gallery items for 3D printing and jewelry pages */
+.gallery-item {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom inquiry section */
+.inquiry-section {
+    background: #000000;
+    padding: 60px 0;
+}
+
+.inquiry-section h2 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.inquiry-section .section-divider {
+    width: 60px;
+    height: 3px;
+    background: #b0b435;
+    margin: 15px auto;
+}
+
+.inquiry-section p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.inquiry-section .btn {
+    background: #b0b435;
+    color: #ffffff;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.inquiry-section .btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Skillsets rows */
+.skill-row {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.skill-row-alt {
+    background: #f5f5f5;
+}
+
+.skill-row-img {
+    height: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.skill-row-img img {
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.skill-row-text {
+    padding: 20px 30px;
+}
+
+.skill-row-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.skill-row-text h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #b0b435;
+}
+
+.skill-row-text p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.8;
+}
