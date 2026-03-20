@@ -65,7 +65,7 @@
                 </div>
             </li>
             <li class="text-center">
-                <img src="images/banner3.png" alt="">
+                <img src="images/banner3.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -154,7 +154,7 @@
             <div id="carousel-3d" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/carrosell_orchid_3d_printing.png" alt="">
+                        <img src="images/carrosell_orchid_3d_printing.jpg" alt="">
                         <div class="hov-in">
                             <a href="3dprinting.html"><i>Orchid</i></a>
                         </div>
@@ -162,7 +162,7 @@
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/gears_3d_print_carossell.png" alt="">
+                        <img src="images/gears_3d_print_carossell.jpg" alt="">
                         <div class="hov-in">
                             <a href="3dprinting.html"><i>Gears</i></a>
                         </div>
@@ -170,7 +170,7 @@
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/Plant_3dprint_carossell.png" alt="">
+                        <img src="images/Plant_3dprint_carossell.jpg" alt="">
                         <div class="hov-in">
                             <a href="3dprinting.html"><i>Plant</i></a>
                         </div>
@@ -178,9 +178,17 @@
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/ring_3d_print_carossell.png" alt="">
+                        <img src="images/teffilin_case_3d_print_carossel.jpg" alt="">
                         <div class="hov-in">
-                            <a href="3dprinting.html"><i>Ring</i></a>
+                            <a href="3dprinting.html"><i>Tefillin Case</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/salt_and_pepper_3d_print_carossel.jpg" alt="">
+                        <div class="hov-in">
+                            <a href="3dprinting.html"><i>Salt & Pepper</i></a>
                         </div>
                     </div>
                 </div>
@@ -199,33 +207,41 @@
             <div id="carousel-jewelry" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/General_ring_carossel.png" alt="">
+                        <img src="images/General_ring_carossel.jpg" alt="">
                         <div class="hov-in">
-                            <a href="jewelry.html"><i>Ring</i></a>
+                            <a href="jewelry.html"><i>Signet</i></a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/ring_3d_print_carossell.png" alt="">
+                        <img src="images/ring_3d_print_carossell.jpg" alt="">
                         <div class="hov-in">
-                            <a href="jewelry.html"><i>Ring</i></a>
+                            <a href="jewelry.html"><i>Engagement</i></a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/General_ring_carossel.png" alt="">
+                        <img src="images/geometry_ring_3d_print.jpg" alt="">
                         <div class="hov-in">
-                            <a href="jewelry.html"><i>Ring</i></a>
+                            <a href="jewelry.html"><i>Geometry</i></a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="ins-inner-box">
-                        <img src="images/ring_3d_print_carossell.png" alt="">
+                        <img src="images/chai_3d_print_carossel.jpg" alt="">
                         <div class="hov-in">
-                            <a href="jewelry.html"><i>Ring</i></a>
+                            <a href="jewelry.html"><i>Chai</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ins-inner-box">
+                        <img src="images/jewish_star_kotel_3d_print_carossell.jpg" alt="">
+                        <div class="hov-in">
+                            <a href="jewelry.html"><i>Jewish Star</i></a>
                         </div>
                     </div>
                 </div>
@@ -247,7 +263,7 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>Quick Links</h4>
-                            <ul>
+                            <ul class="quick-links-row">
                                 <li><a href="woodworking.html">Woodworking</a></li>
                                 <li><a href="3dprinting.html">3D Printing</a></li>
                                 <li><a href="jewelry.html">Jewelry</a></li>
@@ -260,10 +276,10 @@
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Placeholder Address</p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Based in Boca Raton, Florida</p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1234567890">Placeholder Phone</a></p>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+16173692555">(617) 369-2555</a></p>
                                 </li>
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:noahbern10@gmail.com">noahbern10@gmail.com</a></p>
@@ -314,7 +330,7 @@
         };
         $('#carousel-wood').owlCarousel(carouselSettings);
         $('#carousel-3d').owlCarousel(carouselSettings);
-        $('#carousel-jewelry').owlCarousel(carouselSettings);
+        $('#carousel-jewelry').owlCarousel($.extend({}, carouselSettings, { startPosition: 1 }));
     }(jQuery));
     </script>
 

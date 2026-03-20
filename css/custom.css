@@ -156,6 +156,17 @@ nav.navbar.bootsnav ul.nav > li.active > a {
     padding-left: 5px;
 }
 
+/* Quick links in a row */
+.quick-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.quick-links-row li {
+    margin-bottom: 0 !important;
+}
+
 /* Inner pages - solid black navbar, always visible */
 .inner-page nav.navbar.bootsnav {
     background: #000000 !important;
